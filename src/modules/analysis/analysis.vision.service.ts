@@ -47,97 +47,127 @@ nutrition (caloriesKcal, totalFatG, saturatedFatG,
 carbohydratesG, sugarsG, addedSugarsG, proteinG, fiberG, sodiumMg).
 `;
 
-export async function extractNutritionFromImage(
-  image: Express.Multer.File,
-) {
-  console.log("Starting fresh Gemini extraction:", Date.now());
+export async function extractNutritionFromImage(image: Express.Multer.File) {
   const base64Image = image.buffer.toString("base64");
-  
-  
+
   const gemini = await getGemini();
 
-  let response;
+  let response:
+    | Awaited<ReturnType<typeof gemini.models.generateContent>>
+    | undefined;
 
-  try {
-    response = await gemini.models.generateContent({
-      model: "gemini-3-flash-preview",
-      contents: [
-        {
-          inlineData: {
-            mimeType: image.mimetype,
-            data: base64Image,
+  const maxAttempts = 2;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      response = await gemini.models.generateContent({
+        model: "gemini-3-flash-preview",
+        contents: [
+          {
+            inlineData: {
+              mimeType: image.mimetype,
+              data: base64Image,
+            },
           },
-        },
-        extractionInstructions,
-      ],
-      config: {
-  responseMimeType: "application/json",
-  responseSchema: {
-    type: "OBJECT",
-    properties: {
-      productName: { type: "STRING", nullable: true },
-      category: { type: "STRING" },
-      productForm: {
-        type: "STRING",
-        enum: ["solid", "liquid"],
-      },
-      nutritionBasis: {
-        type: "STRING",
-        enum: ["per_serving", "per_100g", "per_100ml"],
-      },
-      servingSize: { type: "NUMBER", nullable: true },
-      nutrition: {
-        type: "OBJECT",
-        properties: {
-          caloriesKcal: { type: "NUMBER", nullable: true },
-          totalFatG: { type: "NUMBER", nullable: true },
-          saturatedFatG: { type: "NUMBER", nullable: true },
-          carbohydratesG: { type: "NUMBER", nullable: true },
-          sugarsG: { type: "NUMBER", nullable: true },
-          addedSugarsG: { type: "NUMBER", nullable: true },
-          proteinG: { type: "NUMBER", nullable: true },
-          fiberG: { type: "NUMBER", nullable: true },
-          sodiumMg: { type: "NUMBER", nullable: true },
-        },
-        required: [
-          "caloriesKcal",
-          "totalFatG",
-          "saturatedFatG",
-          "carbohydratesG",
-          "sugarsG",
-          "addedSugarsG",
-          "proteinG",
-          "fiberG",
-          "sodiumMg",
+          extractionInstructions,
         ],
-      },
-    },
-    required: [
-      "productName",
-      "category",
-      "productForm",
-      "nutritionBasis",
-      "servingSize",
-      "nutrition",
-    ],
-  },
-  temperature: 0,
-},
-    });
-  } catch (error: unknown) {
-   console.error("Gemini API request failed:", error);
+        config: {
+          responseMimeType: "application/json",
 
-   throw new AnalysisError(
-     "AI_UNAVAILABLE",
-      "Gemini could not process the image.",
+          responseSchema: {
+            type: "OBJECT",
+            properties: {
+              productName: { type: "STRING", nullable: true },
+              category: { type: "STRING" },
+              productForm: {
+                type: "STRING",
+                enum: ["solid", "liquid"],
+              },
+              nutritionBasis: {
+                type: "STRING",
+                enum: ["per_serving", "per_100g", "per_100ml"],
+              },
+              servingSize: { type: "NUMBER", nullable: true },
+              nutrition: {
+                type: "OBJECT",
+                properties: {
+                  caloriesKcal: { type: "NUMBER", nullable: true },
+                  totalFatG: { type: "NUMBER", nullable: true },
+                  saturatedFatG: { type: "NUMBER", nullable: true },
+                  carbohydratesG: { type: "NUMBER", nullable: true },
+                  sugarsG: { type: "NUMBER", nullable: true },
+                  addedSugarsG: { type: "NUMBER", nullable: true },
+                  proteinG: { type: "NUMBER", nullable: true },
+                  fiberG: { type: "NUMBER", nullable: true },
+                  sodiumMg: { type: "NUMBER", nullable: true },
+                },
+                required: [
+                  "caloriesKcal",
+                  "totalFatG",
+                  "saturatedFatG",
+                  "carbohydratesG",
+                  "sugarsG",
+                  "addedSugarsG",
+                  "proteinG",
+                  "fiberG",
+                  "sodiumMg",
+                ],
+              },
+            },
+            required: [
+              "productName",
+              "category",
+              "productForm",
+              "nutritionBasis",
+              "servingSize",
+              "nutrition",
+            ],
+          },
+
+          temperature: 0,
+        },
+      });
+
+      break;
+    } catch (error: unknown) {
+      const status =
+        typeof error === "object" &&
+        error !== null &&
+        "status" in error &&
+        typeof error.status === "number"
+          ? error.status
+          : undefined;
+
+      if (status === 503 && attempt < maxAttempts) {
+        console.warn("Gemini temporarily unavailable. Retrying once...");
+
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        continue;
+      }
+
+      console.error("Gemini API request failed:", error);
+
+      throw new AnalysisError(
+        "AI_UNAVAILABLE",
+        "Gemini could not process the image.",
+      );
+    }
+  }
+
+  if (!response) {
+    throw new AnalysisError(
+      "AI_UNAVAILABLE",
+      "Gemini did not return a response.",
     );
   }
 
   const output = response.text;
 
-
   if (!output) {
-    throw new Error("Gemini returned an empty response.");
+    throw new AnalysisError(
+      "INVALID_AI_RESPONSE",
+      "Gemini returned an empty response.",
+    );
   }
 
   let parsed: unknown;
@@ -146,36 +176,32 @@ export async function extractNutritionFromImage(
     parsed = JSON.parse(output);
   } catch {
     throw new AnalysisError(
-  "INVALID_AI_RESPONSE",
-  "Gemini returned invalid JSON.",
-);
+      "INVALID_AI_RESPONSE",
+      "Gemini returned invalid JSON.",
+    );
   }
 
-  if (
-  typeof parsed !== "object" ||
-  parsed === null ||
-  Array.isArray(parsed)
-) {
-  console.error("Unexpected Gemini response structure:", {
-    type: typeof parsed,
-    isArray: Array.isArray(parsed),
-    preview: output.slice(0, 500),
-  });
+  if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
+    console.error("Unexpected Gemini response structure:", {
+      type: typeof parsed,
+      isArray: Array.isArray(parsed),
+      preview: output.slice(0, 500),
+    });
 
-  throw new AnalysisError(
-    "INVALID_AI_RESPONSE",
-    "Gemini returned an invalid response structure.",
-  );
-}
+    throw new AnalysisError(
+      "INVALID_AI_RESPONSE",
+      "Gemini returned an invalid response structure.",
+    );
+  }
 
-const validation = productAnalysisSchema.safeParse(parsed);
+  const validation = productAnalysisSchema.safeParse(parsed);
 
   if (!validation.success) {
     throw new AnalysisError(
       "INVALID_AI_RESPONSE",
       "Gemini returned invalid nutrition data.",
     );
-  } 
+  }
 
   return validation.data;
 }

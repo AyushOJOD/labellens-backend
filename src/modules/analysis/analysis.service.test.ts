@@ -1,4 +1,3 @@
-
 import { describe, it, expect } from "vitest";
 import { evaluateNutrition } from "./analysis.service";
 import { normalizeNutrition } from "./analysis.normalizer";
@@ -102,7 +101,6 @@ describe("evaluateNutrition", () => {
   });
 });
 
-
 it("generates a headline for a single finding", () => {
   const product: ProductAnalysisInput = {
     ...biscuit,
@@ -120,9 +118,7 @@ it("generates a headline for a single finding", () => {
 it("generates a headline for multiple findings", () => {
   const result = evaluateNutrition(biscuit);
 
-  expect(result.headline).toBe(
-    "High in sugar and saturated fat",
-  );
+  expect(result.headline).toBe("High in sugar and saturated fat");
 });
 
 it("reports no elevated nutrients when none exceed thresholds", () => {
@@ -156,9 +152,7 @@ it("uses an incomplete headline when data is missing", () => {
   const result = evaluateNutrition(product);
 
   expect(result.status).toBe("incomplete");
-  expect(result.headline).toBe(
-    "Incomplete nutritional information",
-  );
+  expect(result.headline).toBe("Incomplete nutritional information");
 });
 
 it("uses a review headline for unsupported categories", () => {
@@ -170,7 +164,28 @@ it("uses a review headline for unsupported categories", () => {
   const result = evaluateNutrition(product);
 
   expect(result.status).toBe("needs_review");
-  expect(result.headline).toBe(
-    "Unable to assess reliably",
+  expect(result.headline).toBe("Unable to assess reliably");
+});
+
+it("does not flag sugar when it equals the threshold", () => {
+  const product: ProductAnalysisInput = {
+    ...biscuit,
+    nutritionBasis: "per_100g",
+    servingSize: null,
+    nutrition: {
+      ...biscuit.nutrition,
+      sugarsG: 20,
+      saturatedFatG: 1,
+      sodiumMg: 100,
+    },
+  };
+
+  const result = evaluateNutrition(product);
+
+  expect(result.status).toBe("complete");
+  expect(result.findings).not.toContainEqual(
+    expect.objectContaining({
+      nutrient: "sugarsG",
+    }),
   );
 });

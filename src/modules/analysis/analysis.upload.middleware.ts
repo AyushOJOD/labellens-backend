@@ -1,4 +1,3 @@
-
 import type { Request, Response, NextFunction } from "express";
 import multer from "multer";
 
@@ -29,8 +28,10 @@ export function handleUploadError(
     });
   }
 
-  if (err instanceof Error && err.message ===
-      "Only JPEG, PNG, and WebP images are allowed.") {
+  if (
+    err instanceof Error &&
+    err.message === "Only JPEG, PNG, and WebP images are allowed."
+  ) {
     return res.status(415).json({
       success: false,
       message: err.message,

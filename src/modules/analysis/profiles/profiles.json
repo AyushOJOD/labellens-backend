@@ -1,0 +1,30 @@
+
+{
+  "biscuits": {
+    "version": "development-v1",
+    "status": "illustrative",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 20,
+        "unit": "g",
+        "explanation": "Sugar exceeds the illustrative development threshold."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 5,
+        "unit": "g",
+        "explanation": "Saturated fat exceeds the illustrative development threshold."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 600,
+        "unit": "mg",
+        "explanation": "Sodium exceeds the illustrative development threshold."
+      }
+    ]
+  }
+}
