@@ -108,3 +108,15 @@ pm install && npm run build, and monitors /api/health.
 - **Files**: Integrates with frontend src/features/profile/ProfileView.tsx and src/utils/profile-storage.ts
 - **What it does**:
   - Leverages detailed ingredient taxonomy (palm oil, INS code classification, glycemic index spikes, allergen detection) to power client-side personalized health guards.
+
+---
+
+## 📋 Upcoming Roadmap & TODO List
+
+- [ ] **MongoDB Atlas Integration (Priority for Public Launch)**
+  - **Context**: Currently using the in-memory + persistent auto-cache (\data/products.cache.json\) on Render. While the container is active, user scans expand the database in real-time. However, Render's free tier ephemeral disk resets runtime file writes on container sleep or redeploy.
+  - **Action**: Connect the backend to a free MongoDB Atlas cluster (M0 sandbox 512MB holds ~200,000 products) so crowdsourced scans persist permanently across all server restarts and redeployments.
+- [ ] **Standalone Android APK Distribution (\eas build\)**
+  - Package an installable \.apk\ for testers who don't use Expo Go.
+- [ ] **Product Health Comparison Mode (Explore Tab)**
+  - Allow side-by-side comparison of two scanned products (e.g., Maggi vs. Yippee or Parle-G vs. Marie Gold) to highlight the healthier choice.
