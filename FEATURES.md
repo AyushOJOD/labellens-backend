@@ -94,3 +94,12 @@ This document tracks all features, capabilities, and regulatory benchmarks imple
   - **Resilient File Handling**: Includes UTF-8 BOM removal (`\uFEFF`) and non-blocking asynchronous disk flushes so the database never corrupts on cross-platform environments.
   - **57 Total Vitest Tests Passing** across 8 test suites.
 
+
+### 11. Production Build & Render Cloud Deployment Pipeline
+- **Files**: ender.yaml, scripts/copy-assets.js, package.json
+- **What it does**:
+  - Added cross-platform asset copy script (scripts/copy-assets.js) to bundle non-TS JSON assets (profiles.json, products.seed.json) into dist upon 
+pm run build.
+  - Added Render Blueprint (ender.yaml) targeting Singapore region for optimal low latency in India.
+  - Automatically provisions Node.js environment, runs 
+pm install && npm run build, and monitors /api/health.
