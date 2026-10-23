@@ -116,4 +116,24 @@ describe("POST /api/analyze/image", () => {
     expect(response.body.message).toContain("5 MB");
     expect(mockedExtract).not.toHaveBeenCalled();
   });
+
+  it("auto-caches image scan into local database when barcode is attached", async () => {
+    const response = await request(app)
+      .post("/api/analyze/image")
+      .field("barcode", "8908888888888")
+      .attach("image", validJpeg, {
+        filename: "label.jpg",
+        contentType: "image/jpeg",
+      })
+      .expect(200);
+
+    expect(response.body.success).toBe(true);
+    expect(response.body.cached).toBe(true);
+
+    // Verify it is now in the persistent cache
+    const { getCachedProductByBarcode } = await import("../products/products.cache");
+    const cached = getCachedProductByBarcode("8908888888888");
+    expect(cached).not.toBeNull();
+    expect(cached?.productName).toBe("Chocolate Biscuits");
+  });
 });
