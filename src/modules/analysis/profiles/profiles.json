@@ -1,4 +1,3 @@
-
 {
   "biscuits": {
     "version": "development-v1",
@@ -9,21 +8,351 @@
         "label": "sugar",
         "threshold": 20,
         "unit": "g",
-        "explanation": "Sugar exceeds the illustrative development threshold."
+        "level": "high",
+        "required": true,
+        "explanation": "Sugar exceeds the illustrative development threshold (20g/100g)."
       },
       {
         "nutrient": "saturatedFatG",
         "label": "saturated fat",
         "threshold": 5,
         "unit": "g",
-        "explanation": "Saturated fat exceeds the illustrative development threshold."
+        "level": "high",
+        "required": true,
+        "explanation": "Saturated fat exceeds the illustrative development threshold (5g/100g)."
       },
       {
         "nutrient": "sodiumMg",
         "label": "sodium",
         "threshold": 600,
         "unit": "mg",
-        "explanation": "Sodium exceeds the illustrative development threshold."
+        "level": "high",
+        "required": true,
+        "explanation": "Sodium exceeds the illustrative development threshold (600mg/100g)."
+      },
+      {
+        "nutrient": "transFatG",
+        "label": "trans fat",
+        "threshold": 0.2,
+        "unit": "g",
+        "level": "high",
+        "required": false,
+        "explanation": "Contains trans fat exceeding FSSAI threshold (0.2g/100g)."
+      }
+    ]
+  },
+  "namkeen_snacks": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "totalFatG",
+        "label": "total fat",
+        "threshold": 25,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High total fat (>25g/100g), typical of deep-fried Indian namkeen, bhujia, and potato chips."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 8,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High in saturated fat (>8g/100g). Commercial Indian packaged snacks heavily rely on refined palmolein (palm oil)."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 500,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "High sodium (>500mg/100g, exceeding FSSAI HFSS benchmark). A standard 100g pack provides over 25% of ICMR's 2,000 mg daily limit."
+      },
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 10,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Elevated sugar (>10g/100g) in a savory snack product."
+      },
+      {
+        "nutrient": "transFatG",
+        "label": "trans fat",
+        "threshold": 0.2,
+        "unit": "g",
+        "level": "high",
+        "required": false,
+        "explanation": "Contains trans fat (>0.2g/100g), which is strictly regulated by FSSAI."
+      }
+    ]
+  },
+  "beverages": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High sugar for beverages (>5g/100ml, FSSAI HFSS liquid threshold). A single 250ml can contains over 6 teaspoons of sugar."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 1.5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Elevated saturated fat (>1.5g/100ml) for a liquid beverage."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 100,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "Elevated sodium (>100mg/100ml) for a packaged drink."
+      }
+    ]
+  },
+  "instant_foods": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 650,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "Critically high sodium (>650mg/100g). Instant noodles and tastemakers often contain over 60% of an adult's entire daily salt allowance."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High saturated fat (>5g/100g), typically resulting from flash-frying noodles in refined palm oil."
+      },
+      {
+        "nutrient": "transFatG",
+        "label": "trans fat",
+        "threshold": 0.2,
+        "unit": "g",
+        "level": "high",
+        "required": false,
+        "explanation": "Contains trans fat (>0.2g/100g)."
+      }
+    ]
+  },
+  "sweets_confectionery": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 25,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Extremely high sugar (>25g/100g). Exceeds the ICMR recommended daily added sugar ceiling (25g) in just 100g."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 10,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High saturated fat (>10g/100g) from cocoa butter, dairy fats, or hydrogenated vegetable oils."
+      },
+      {
+        "nutrient": "transFatG",
+        "label": "trans fat",
+        "threshold": 0.2,
+        "unit": "g",
+        "level": "high",
+        "required": false,
+        "explanation": "Contains trans fat (>0.2g/100g)."
+      }
+    ]
+  },
+  "breakfast_cereals": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 15,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High sugar (>15g/100g) for breakfast foods. Many sweetened cereals in India contain heavy sugar glazes."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 350,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "Elevated sodium (>350mg/100g) for cereal."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 3,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Elevated saturated fat (>3g/100g)."
+      }
+    ]
+  },
+  "dairy": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 8,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High sugar (>8g/100g). Natural lactose in milk is ~4.5g; higher values represent substantial added refined sugars."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 4,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High saturated fat (>4g/100g)."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 200,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "Elevated sodium (>200mg/100g)."
+      }
+    ]
+  },
+  "sauces_condiments": {
+    "version": "fssai-icmr-v1",
+    "status": "fssai-icmr",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 20,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "High sugar (>20g/100g). Packaged ketchups and sweet sauces typically contain 20-30% sugar."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 800,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "High sodium (>800mg/100g). Condiments and dips are exceptionally salt-dense."
+      }
+    ]
+  },
+  "solid_general": {
+    "version": "fssai-hfss-v1",
+    "status": "fssai-hfss",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 12.5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Exceeds FSSAI HFSS solid benchmark for sugar (>12.5g/100g)."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 4.5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Exceeds FSSAI HFSS solid benchmark for saturated fat (>4.5g/100g)."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 350,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "Exceeds FSSAI HFSS solid benchmark for sodium (>350mg/100g)."
+      },
+      {
+        "nutrient": "transFatG",
+        "label": "trans fat",
+        "threshold": 0.2,
+        "unit": "g",
+        "level": "high",
+        "required": false,
+        "explanation": "Contains trans fat exceeding FSSAI threshold (0.2g/100g)."
+      }
+    ]
+  },
+  "liquid_general": {
+    "version": "fssai-hfss-v1",
+    "status": "fssai-hfss",
+    "rules": [
+      {
+        "nutrient": "sugarsG",
+        "label": "sugar",
+        "threshold": 5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Exceeds FSSAI HFSS liquid benchmark for sugar (>5g/100ml)."
+      },
+      {
+        "nutrient": "saturatedFatG",
+        "label": "saturated fat",
+        "threshold": 1.5,
+        "unit": "g",
+        "level": "high",
+        "required": true,
+        "explanation": "Exceeds FSSAI HFSS liquid benchmark for saturated fat (>1.5g/100ml)."
+      },
+      {
+        "nutrient": "sodiumMg",
+        "label": "sodium",
+        "threshold": 100,
+        "unit": "mg",
+        "level": "high",
+        "required": true,
+        "explanation": "Exceeds FSSAI HFSS liquid benchmark for sodium (>100mg/100ml)."
       }
     ]
   }

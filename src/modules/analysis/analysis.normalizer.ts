@@ -1,4 +1,3 @@
-
 import type {
   NormalizedNutrition,
   ProductAnalysisInput,
@@ -7,11 +6,14 @@ import type {
 export function normalizeNutrition(
   product: ProductAnalysisInput,
 ): NormalizedNutrition | null {
-  const { productForm, nutritionBasis, servingSize, nutrition } =
-    product;
+  const { productForm, nutritionBasis, servingSize, nutrition } = product;
 
   const targetBasis =
-    productForm === "solid" ? "per_100g" : "per_100ml";
+    nutritionBasis === "per_100g" || nutritionBasis === "per_100ml"
+      ? nutritionBasis
+      : productForm === "solid"
+        ? "per_100g"
+        : "per_100ml";
 
   let factor = 1;
 
@@ -21,49 +23,29 @@ export function normalizeNutrition(
     }
 
     factor = 100 / servingSize;
-  } else if (nutritionBasis !== targetBasis) {
+  } else if (nutritionBasis !== "per_100g" && nutritionBasis !== "per_100ml") {
     return null;
   }
 
   return {
     basis: targetBasis,
-    caloriesKcal:
-      nutrition.caloriesKcal === null
-        ? null
-        : round(nutrition.caloriesKcal * factor),
-    totalFatG:
-      nutrition.totalFatG === null
-        ? null
-        : round(nutrition.totalFatG * factor),
-    saturatedFatG:
-      nutrition.saturatedFatG === null
-        ? null
-        : round(nutrition.saturatedFatG * factor),
-    carbohydratesG:
-      nutrition.carbohydratesG === null
-        ? null
-        : round(nutrition.carbohydratesG * factor),
-    sugarsG:
-      nutrition.sugarsG === null
-        ? null
-        : round(nutrition.sugarsG * factor),
-    addedSugarsG:
-      nutrition.addedSugarsG === null
-        ? null
-        : round(nutrition.addedSugarsG * factor),
-    proteinG:
-      nutrition.proteinG === null
-        ? null
-        : round(nutrition.proteinG * factor),
-    fiberG:
-      nutrition.fiberG === null
-        ? null
-        : round(nutrition.fiberG * factor),
-    sodiumMg:
-      nutrition.sodiumMg === null
-        ? null
-        : round(nutrition.sodiumMg * factor),
+    caloriesKcal: scale(nutrition.caloriesKcal, factor),
+    totalFatG: scale(nutrition.totalFatG, factor),
+    saturatedFatG: scale(nutrition.saturatedFatG, factor),
+    transFatG: scale(nutrition.transFatG, factor),
+    monounsaturatedFatG: scale(nutrition.monounsaturatedFatG, factor),
+    polyunsaturatedFatG: scale(nutrition.polyunsaturatedFatG, factor),
+    carbohydratesG: scale(nutrition.carbohydratesG, factor),
+    sugarsG: scale(nutrition.sugarsG, factor),
+    addedSugarsG: scale(nutrition.addedSugarsG, factor),
+    proteinG: scale(nutrition.proteinG, factor),
+    fiberG: scale(nutrition.fiberG, factor),
+    sodiumMg: scale(nutrition.sodiumMg, factor),
   };
+}
+
+function scale(value: number | null, factor: number): number | null {
+  return value === null ? null : round(value * factor);
 }
 
 function round(value: number): number {

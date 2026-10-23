@@ -2,7 +2,7 @@ import multer from "multer";
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
 
-const allowedMimeTypes = ["image/jpeg", "image/png", "image/webp"];
+export const allowedMimeTypes = ["image/jpeg", "image/png", "image/webp"];
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -30,11 +30,19 @@ export async function validateImageContents(
   const { fileTypeFromBuffer } = await import("file-type");
   const detectedType = await fileTypeFromBuffer(buffer);
 
-  return (
-    detectedType !== undefined &&
-    allowedMimeTypes.includes(detectedType.mime) &&
-    detectedType.mime === declaredMimeType
-  );
+  console.log("Image validation:", {
+    declaredMimeType,
+    detectedMimeType: detectedType?.mime ?? "unknown",
+    fileSize: buffer.length,
+  });
+
+  if (!detectedType || !allowedMimeTypes.includes(detectedType.mime)) {
+    return false;
+  }
+
+  // Trust the actual file signature rather than the MIME type
+  // declared by the frontend.
+  return true;
 }
 
 export default upload;
