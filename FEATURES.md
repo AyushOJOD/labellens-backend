@@ -103,3 +103,8 @@ pm run build.
   - Added Render Blueprint (ender.yaml) targeting Singapore region for optimal low latency in India.
   - Automatically provisions Node.js environment, runs 
 pm install && npm run build, and monitors /api/health.
+
+### 12. Support for Personalized Profile Health Matching
+- **Files**: Integrates with frontend src/features/profile/ProfileView.tsx and src/utils/profile-storage.ts
+- **What it does**:
+  - Leverages detailed ingredient taxonomy (palm oil, INS code classification, glycemic index spikes, allergen detection) to power client-side personalized health guards.
