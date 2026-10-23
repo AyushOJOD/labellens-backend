@@ -3,15 +3,13 @@ import { productAnalysisSchema } from "./analysis.schema";
 import { AnalysisError } from "./analysis.errors";
 
 const extractionInstructions = `
-You extract nutrition information from product label images.
-
+You extract nutrition and ingredients information from product label images.
 
 Return exactly ONE JSON object representing ONE product.
 Never return a JSON array.
 Never return multiple candidate objects or alternative interpretations.
 Do not wrap the object in an array.
 Return only the object, with no Markdown or surrounding explanation.
-
 
 Rules:
 - Extract values exactly as printed. Never guess missing values.
@@ -31,7 +29,7 @@ Rules:
 - servingSize must be a positive number when the label gives it.
 - Use solid or liquid for productForm.
 - Choose a concise category, such as biscuits, beverage,
-  cereal, snack, or unknown.
+  cereal, snack, instant_foods, dairy, or unknown.
 - Convert energy to kcal, nutrients to grams, and sodium to
   milligrams only when conversion is reliable.
 - Do not confuse salt with sodium. If sodium cannot be
@@ -40,9 +38,17 @@ Rules:
 - If the image is not a nutrition label, use category "unknown",
   productName null, and null for all numeric nutrition values.
 - Never invent product names, units, or nutrient values.
+- Extract trans fat, monounsaturated fat, and polyunsaturated fat
+  only when each value is explicitly provided or reliably
+  distinguishable on the label. Otherwise return null.
+- Do not infer individual fat types from total fat or saturated fat.
+- Extract the raw printed ingredient list text if visible on the image into ingredientsText.
+  Include all ingredients and INS numbers (e.g. "Refined wheat flour, palmolein oil, sugar, INS 500(ii)...").
+  If not visible, return null.
+- Extract any visible printed barcode number (8 to 14 digits) into barcode. If not visible, return null.
 
 Required fields:
-productName, category, productForm, nutritionBasis, servingSize,
+productName, category, productForm, nutritionBasis, servingSize, ingredientsText, barcode,
 nutrition (caloriesKcal, totalFatG, saturatedFatG,
 carbohydratesG, sugarsG, addedSugarsG, proteinG, fiberG, sodiumMg).
 `;
@@ -88,6 +94,8 @@ export async function extractNutritionFromImage(image: Express.Multer.File) {
                 enum: ["per_serving", "per_100g", "per_100ml"],
               },
               servingSize: { type: "NUMBER", nullable: true },
+              ingredientsText: { type: "STRING", nullable: true },
+              barcode: { type: "STRING", nullable: true },
               nutrition: {
                 type: "OBJECT",
                 properties: {
@@ -100,11 +108,17 @@ export async function extractNutritionFromImage(image: Express.Multer.File) {
                   proteinG: { type: "NUMBER", nullable: true },
                   fiberG: { type: "NUMBER", nullable: true },
                   sodiumMg: { type: "NUMBER", nullable: true },
+                  transFatG: { type: "NUMBER", nullable: true },
+                  monounsaturatedFatG: { type: "NUMBER", nullable: true },
+                  polyunsaturatedFatG: { type: "NUMBER", nullable: true },
                 },
                 required: [
                   "caloriesKcal",
                   "totalFatG",
                   "saturatedFatG",
+                  "transFatG",
+                  "monounsaturatedFatG",
+                  "polyunsaturatedFatG",
                   "carbohydratesG",
                   "sugarsG",
                   "addedSugarsG",
@@ -120,6 +134,7 @@ export async function extractNutritionFromImage(image: Express.Multer.File) {
               "productForm",
               "nutritionBasis",
               "servingSize",
+              "ingredientsText",
               "nutrition",
             ],
           },
@@ -197,6 +212,13 @@ export async function extractNutritionFromImage(image: Express.Multer.File) {
   const validation = productAnalysisSchema.safeParse(parsed);
 
   if (!validation.success) {
+    console.error("Gemini validation errors:", validation.error.issues);
+
+    console.error(
+      "Gemini response preview:",
+      JSON.stringify(parsed).slice(0, 1500),
+    );
+
     throw new AnalysisError(
       "INVALID_AI_RESPONSE",
       "Gemini returned invalid nutrition data.",
