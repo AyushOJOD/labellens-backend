@@ -1,8 +1,9 @@
-import express from "express";
+﻿import express from "express";
 import cors from "cors";
 
 import healthRoutes from "./routes/health.routes";
 import analysisRoutes from "./modules/analysis/analysis.routes";
+import barcodeRoutes from "./modules/barcode/barcode.routes";
 import { AnalysisError } from "./modules/analysis/analysis.errors";
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use("/api/health", healthRoutes);
 app.use("/api/analyze", analysisRoutes);
+app.use("/api/barcode", barcodeRoutes);
 
 app.use(
   (

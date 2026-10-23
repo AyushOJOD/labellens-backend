@@ -1,0 +1,1913 @@
+﻿{
+    "datasetName":  "LabelLens Indian Packaged Foods Seed Catalog",
+    "datasetVersion":  "0.1.0",
+    "createdOn":  "2026-10-15",
+    "recordCount":  63,
+    "scope":  [
+                  "biscuits",
+                  "namkeen",
+                  "chips",
+                  "mustard_oil",
+                  "olive_oil",
+                  "sunflower_oil"
+              ],
+    "purpose":  "Starter product lookup catalog, not an official nutrition database or set of evaluation criteria.",
+    "dataPolicy":  [
+                       "Null means unknown, never zero.",
+                       "Partial nutrition values are source-specific and must be checked against the current package.",
+                       "Product data is separate from category evaluation profiles and thresholds.",
+                       "Identity-only records must not be evaluated from guessed values."
+                   ],
+    "products":  [
+                     {
+                         "id":  "parle-parle-g-original-glucose-biscuits",
+                         "name":  "Parle-G Original Glucose Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  454,
+                                           "totalFatG":  13,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  77.3,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6.9,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/parle/g-biscuit/100g",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-dark-parle-g",
+                         "name":  "Dark Parle-G",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  457,
+                                           "totalFatG":  13.4,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  77.5,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6.4,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-20-20-butter-cookies",
+                         "name":  "20-20 Butter Cookies",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  489,
+                                           "totalFatG":  20.1,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  70.3,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.8,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/parle/20-20-biscuit/100g",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-coconut-biscuits",
+                         "name":  "Coconut Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  469,
+                                           "totalFatG":  16,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  74.6,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6.5,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-oats-berries-biscuits",
+                         "name":  "Oats \u0026 Berries Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  445,
+                                           "totalFatG":  11.2,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  78.8,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7.2,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-hide-seek-chocolate-chip-biscuits",
+                         "name":  "Hide \u0026 Seek Chocolate Chip Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-hide-seek-milano-choco-chip-biscuits",
+                         "name":  "Hide \u0026 Seek Milano Choco Chip Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  518,
+                                           "totalFatG":  25.8,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  67,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  4.4,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-magix-orange-sandwich-biscuits",
+                         "name":  "Magix Orange Sandwich Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  465,
+                                           "totalFatG":  15.3,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  75.4,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.6,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-magix-chocolate-sandwich-biscuits",
+                         "name":  "Magix Chocolate Sandwich Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  471,
+                                           "totalFatG":  16.3,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  75.3,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.8,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "parle-magix-elaichi-sandwich-biscuits",
+                         "name":  "Magix Elaichi Sandwich Biscuits",
+                         "brand":  "Parle",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  467,
+                                           "totalFatG":  15.5,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  76.4,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.5,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Parle",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-marie-gold-biscuits",
+                         "name":  "Marie Gold Biscuits",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  445,
+                                           "totalFatG":  10.6,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  79.5,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7.9,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Britannia+Marie+Biscuits",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-good-day-butter-cookies",
+                         "name":  "Good Day Butter Cookies",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  508,
+                                           "totalFatG":  23.4,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  67.7,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6.6,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.healthifyme.com/web/nutrifacts/britannia-good-day-biscuits-c0194a44f8",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-bourbon-biscuits",
+                         "name":  "Bourbon Biscuits",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  494,
+                                           "totalFatG":  21,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  71,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?q=Britannia+Marie+Biscuits",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-digestive-biscuits",
+                         "name":  "Digestive Biscuits",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  455,
+                                           "totalFatG":  19.6,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  62,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7.5,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/britannia/digestive-biscuits/100g",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-milk-bikis",
+                         "name":  "Milk Bikis",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  472,
+                                           "totalFatG":  18,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  72,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  8.3,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/britannia",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-jim-jam",
+                         "name":  "Jim Jam",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  483,
+                                           "totalFatG":  19,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  73,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/britannia",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-nice-time-biscuits",
+                         "name":  "Nice Time Biscuits",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  455,
+                                           "totalFatG":  14.5,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  74,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/britannia",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-tiger-glucose-biscuits",
+                         "name":  "Tiger Glucose Biscuits",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  449,
+                                           "totalFatG":  13,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  76,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_partial_secondary_source",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/britannia",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "britannia-nutrichoice-hi-fibre-digestive-biscuits",
+                         "name":  "NutriChoice Hi Fibre Digestive Biscuits",
+                         "brand":  "Britannia",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?frc=True\u0026q=Biscuits",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "oreo-oreo-original-chocolate-sandwich-cookies",
+                         "name":  "Oreo Original Chocolate Sandwich Cookies",
+                         "brand":  "Oreo",
+                         "category":  "biscuits",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "FatSecret India / HealthifyMe",
+                                        "url":  "https://www.fatsecret.co.in/calories-nutrition/search?frc=True\u0026q=Biscuits",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Partial per-100-g nutrition fields from a secondary database; verify the current Indian package. All unreported nutrients remain null."
+                     },
+                     {
+                         "id":  "haldiram-s-bhujia-masala",
+                         "name":  "Bhujia Masala",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  31.43,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  571.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-bhujia-plain",
+                         "name":  "Bhujia Plain",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  31.43,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  571.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-aloo-bhujia",
+                         "name":  "Aloo Bhujia",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  657.14,
+                                           "totalFatG":  51.43,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  40.0,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.71,
+                                           "fiberG":  20.0,
+                                           "sodiumMg":  657.14,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-khatta-meetha",
+                         "name":  "Khatta Meetha",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  40.0,
+                                           "sugarsG":  8.57,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  11.43,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  371.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-navrattan",
+                         "name":  "Navrattan",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  514.29,
+                                           "totalFatG":  31.43,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  40.0,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  514.29,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-nut-cracker",
+                         "name":  "Nut Cracker",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  600.0,
+                                           "totalFatG":  48.57,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  20.0,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  857.14,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-moong-dal",
+                         "name":  "Moong Dal",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  457.14,
+                                           "totalFatG":  20.0,
+                                           "saturatedFatG":  2.86,
+                                           "carbohydratesG":  51.43,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  600.0,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-masala-moong-dal",
+                         "name":  "Masala Moong Dal",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  5.71,
+                                           "carbohydratesG":  31.43,
+                                           "sugarsG":  2.86,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  11.43,
+                                           "sodiumMg":  514.29,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-boondi-plain",
+                         "name":  "Boondi Plain",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  542.86,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  40.0,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  8.57,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  857.14,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-boondi-masala",
+                         "name":  "Boondi Masala",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  542.86,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  40.0,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  8.57,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  857.14,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-bombay-mixture",
+                         "name":  "Bombay Mixture",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  31.43,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  2.86,
+                                           "sodiumMg":  571.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-diet-murmura",
+                         "name":  "Diet Murmura",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  371.43,
+                                           "totalFatG":  8.57,
+                                           "saturatedFatG":  5.71,
+                                           "carbohydratesG":  57.14,
+                                           "sugarsG":  5.71,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  14.29,
+                                           "fiberG":  2.86,
+                                           "sodiumMg":  771.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-diet-mixture",
+                         "name":  "Diet Mixture",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  314.29,
+                                           "totalFatG":  8.57,
+                                           "saturatedFatG":  5.71,
+                                           "carbohydratesG":  60.0,
+                                           "sugarsG":  2.86,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.71,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  1011.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-diet-chiwda",
+                         "name":  "Diet Chiwda",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  314.29,
+                                           "totalFatG":  8.57,
+                                           "saturatedFatG":  5.71,
+                                           "carbohydratesG":  51.43,
+                                           "sugarsG":  2.86,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.71,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  657.14,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-fatafat-bhel",
+                         "name":  "Fatafat Bhel",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  542.86,
+                                           "totalFatG":  31.43,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  54.29,
+                                           "sugarsG":  14.29,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  11.43,
+                                           "fiberG":  null,
+                                           "sodiumMg":  542.86,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-lemon-bhel",
+                         "name":  "Lemon Bhel",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  657.14,
+                                           "totalFatG":  51.43,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  17.14,
+                                           "sugarsG":  8.57,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  28.57,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  800.0,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-masala-peanut",
+                         "name":  "Masala Peanut",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  657.14,
+                                           "totalFatG":  51.43,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  17.14,
+                                           "sugarsG":  8.57,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  28.57,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  800.0,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-chaipuri",
+                         "name":  "Chaipuri",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  542.86,
+                                           "totalFatG":  31.43,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  51.43,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  11.43,
+                                           "fiberG":  11.43,
+                                           "sodiumMg":  571.43,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-kachori",
+                         "name":  "Kachori",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  314.29,
+                                           "totalFatG":  17.14,
+                                           "saturatedFatG":  2.86,
+                                           "carbohydratesG":  31.43,
+                                           "sugarsG":  5.71,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  5.71,
+                                           "fiberG":  2.86,
+                                           "sodiumMg":  657.14,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-long-sev",
+                         "name":  "Long Sev",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "namkeen",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  10.0,
+                                           "carbohydratesG":  31.43,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  20.0,
+                                           "fiberG":  5.71,
+                                           "sodiumMg":  714.29,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/namkeen-and-savories/namkeens",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Official page reports per-35-g serving; numeric values converted to per 100 g. Confirm against current Indian-market pack before production use."
+                     },
+                     {
+                         "id":  "haldiram-s-salted-banana-chips",
+                         "name":  "Salted Banana Chips",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  48.57,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  2.86,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  714.29,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Published per-35-g serving converted to per 100 g; verify current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-banana-chips-masala",
+                         "name":  "Banana Chips Masala",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  48.57,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  2.86,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  714.29,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Published per-35-g serving converted to per 100 g; verify current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-banana-chips-tangy-tomato",
+                         "name":  "Banana Chips Tangy Tomato",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  571.43,
+                                           "totalFatG":  40.0,
+                                           "saturatedFatG":  8.57,
+                                           "carbohydratesG":  48.57,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  2.86,
+                                           "fiberG":  8.57,
+                                           "sodiumMg":  714.29,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_normalized_from_published_serving",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Published per-35-g serving converted to per 100 g; verify current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-potato-chips-salted",
+                         "name":  "Potato Chips Salted",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  550,
+                                           "totalFatG":  36,
+                                           "saturatedFatG":  17,
+                                           "carbohydratesG":  57,
+                                           "sugarsG":  0.3,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6.2,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_published_per_100g",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Nutrition shown on official international page; verify basis and current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-potato-chips-pudina",
+                         "name":  "Potato Chips Pudina",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  559,
+                                           "totalFatG":  36,
+                                           "saturatedFatG":  17,
+                                           "carbohydratesG":  52,
+                                           "sugarsG":  0.5,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6.5,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_published_per_100g",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Nutrition shown on official international page; verify basis and current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-potato-chips-papri-chaat",
+                         "name":  "Potato Chips Papri Chaat",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  546,
+                                           "totalFatG":  33,
+                                           "saturatedFatG":  17,
+                                           "carbohydratesG":  56,
+                                           "sugarsG":  3,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_published_per_100g",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Nutrition shown on official international page; verify basis and current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-potato-chips-masala",
+                         "name":  "Potato Chips Masala",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  546,
+                                           "totalFatG":  34,
+                                           "saturatedFatG":  17,
+                                           "carbohydratesG":  54,
+                                           "sugarsG":  0.3,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  6,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_published_per_100g",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Nutrition shown on official international page; verify basis and current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-potato-chips-thai-chilli",
+                         "name":  "Potato Chips Thai Chilli",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  532,
+                                           "totalFatG":  32,
+                                           "saturatedFatG":  17,
+                                           "carbohydratesG":  54,
+                                           "sugarsG":  8,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_published_per_100g",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Nutrition shown on official international page; verify basis and current Indian-market pack."
+                     },
+                     {
+                         "id":  "haldiram-s-potato-chips-cream-onion",
+                         "name":  "Potato Chips Cream Onion",
+                         "brand":  "Haldiram\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  "per_100g",
+                         "servingSize":  100,
+                         "nutrition":  {
+                                           "caloriesKcal":  550,
+                                           "totalFatG":  34,
+                                           "saturatedFatG":  17,
+                                           "carbohydratesG":  54,
+                                           "sugarsG":  1,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  7,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "nutrition_published_per_100g",
+                         "source":  {
+                                        "name":  "Haldiram\u0027s official international product page",
+                                        "url":  "https://international.haldiram.com/chips/chips",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Nutrition shown on official international page; verify basis and current Indian-market pack."
+                     },
+                     {
+                         "id":  "lay-s-lay-s-classic-salted",
+                         "name":  "Lay\u0027s Classic Salted",
+                         "brand":  "Lay\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "lay-s-lay-s-american-style-cream-onion",
+                         "name":  "Lay\u0027s American Style Cream \u0026 Onion",
+                         "brand":  "Lay\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "lay-s-lay-s-india-s-magic-masala",
+                         "name":  "Lay\u0027s India\u0027s Magic Masala",
+                         "brand":  "Lay\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "lay-s-lay-s-spanish-tomato-tango",
+                         "name":  "Lay\u0027s Spanish Tomato Tango",
+                         "brand":  "Lay\u0027s",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "kurkure-kurkure-masala-munch",
+                         "name":  "Kurkure Masala Munch",
+                         "brand":  "Kurkure",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "kurkure-kurkure-chilli-chatka",
+                         "name":  "Kurkure Chilli Chatka",
+                         "brand":  "Kurkure",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "bingo-bingo-mad-angles-achaari-masti",
+                         "name":  "Bingo! Mad Angles Achaari Masti",
+                         "brand":  "Bingo!",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "bingo-bingo-tedhe-medhe-masala-tadka",
+                         "name":  "Bingo! Tedhe Medhe Masala Tadka",
+                         "brand":  "Bingo!",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "uncle-chipps-uncle-chipps-spicy-treat",
+                         "name":  "Uncle Chipps Spicy Treat",
+                         "brand":  "Uncle Chipps",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "balaji-balaji-wafers-masala-masti",
+                         "name":  "Balaji Wafers Masala Masti",
+                         "brand":  "Balaji",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "pringles-pringles-original",
+                         "name":  "Pringles Original",
+                         "brand":  "Pringles",
+                         "category":  "chips",
+                         "productForm":  "solid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Retail listing discovery; nutrition not transcribed",
+                                        "url":  "https://www.bigbasket.com/",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Catalog identity only. Do not evaluate this product until current package nutrition is verified."
+                     },
+                     {
+                         "id":  "fortune-kachi-ghani-mustard-oil",
+                         "name":  "Fortune Kachi Ghani Mustard Oil",
+                         "brand":  "Fortune",
+                         "category":  "mustard_oil",
+                         "productForm":  "liquid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Product identity seed; package not verified",
+                                        "url":  "",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Seed record for category and search testing only. Verify the exact product and nutrition label before treating it as a verified catalog entry."
+                     },
+                     {
+                         "id":  "figaro-extra-virgin-olive-oil",
+                         "name":  "Figaro Extra Virgin Olive Oil",
+                         "brand":  "Figaro",
+                         "category":  "olive_oil",
+                         "productForm":  "liquid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Product identity seed; package not verified",
+                                        "url":  "",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Seed record for category and search testing only. Verify the exact product and nutrition label before treating it as a verified catalog entry."
+                     },
+                     {
+                         "id":  "fortune-refined-sunflower-oil",
+                         "name":  "Fortune Refined Sunflower Oil",
+                         "brand":  "Fortune",
+                         "category":  "sunflower_oil",
+                         "productForm":  "liquid",
+                         "nutritionBasis":  null,
+                         "servingSize":  null,
+                         "nutrition":  {
+                                           "caloriesKcal":  null,
+                                           "totalFatG":  null,
+                                           "saturatedFatG":  null,
+                                           "carbohydratesG":  null,
+                                           "sugarsG":  null,
+                                           "addedSugarsG":  null,
+                                           "proteinG":  null,
+                                           "fiberG":  null,
+                                           "sodiumMg":  null,
+                                           "transFatG":  null,
+                                           "monounsaturatedFatG":  null,
+                                           "polyunsaturatedFatG":  null
+                                       },
+                         "dataStatus":  "identity_only",
+                         "source":  {
+                                        "name":  "Product identity seed; package not verified",
+                                        "url":  "",
+                                        "accessedOn":  "2026-10-15"
+                                    },
+                         "notes":  "Seed record for category and search testing only. Verify the exact product and nutrition label before treating it as a verified catalog entry."
+                     }
+                 ]
+}
